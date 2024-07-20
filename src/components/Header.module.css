@@ -1,0 +1,208 @@
+.headerChild {
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 70px;
+  right: -1440px;
+  bottom: -74px;
+  left: 1440px;
+  background-color: var(--color-white);
+  transform: rotate(-180deg);
+  transform-origin: 0 0;
+}
+.groupIcon {
+  height: 31.4px;
+  width: 36.7px;
+  position: relative;
+}
+.groupIcon1 {
+  align-self: stretch;
+  height: 18.4px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.groupWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-6xs-3) 0 0;
+}
+.groupParent,
+.groupWrapper,
+.mainMenuInner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.groupParent {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xs-6);
+}
+.mainMenuInner {
+  width: 161.2px;
+  flex-direction: column;
+  padding: var(--padding-9xs-3) 0 0;
+  box-sizing: border-box;
+}
+.pricing,
+.solutions,
+.testimonials {
+  text-decoration: none;
+  height: 28px;
+  position: relative;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  min-width: 78px;
+}
+.pricing,
+.testimonials {
+  min-width: 59px;
+}
+.testimonials {
+  min-width: 104px;
+}
+.solutionsPricingTestimonials,
+.solutionsPricingTestimonialsWrapper {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.solutionsPricingTestimonials {
+  flex-direction: row;
+  gap: var(--gap-8xl-5);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--text-light);
+  font-family: var(--h5-20);
+}
+.solutionsPricingTestimonialsWrapper {
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 0;
+}
+
+.logInWrapper {
+  cursor: pointer;
+  border: 2px solid var(--referizzer-main);
+  background-color: transparent;
+  border-radius: var(--br-5xs);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 7px 16px 5px;
+  color: var(--referizzer-main);
+  font-family: var(--h5-20);
+  font-weight: 600;
+  font-size: 16px;
+
+}
+.logInWrapper:hover {
+  background-color: var(--color-dodgerblue-200);
+  border: 2px solid var(--color-dodgerblue-100);
+  box-sizing: border-box;
+}
+
+.getStartedForFreeWrapper {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--referizzer-main);
+  border-radius: var(--br-7xs);
+  justify-content: flex-start;
+  white-space: nowrap;
+  color: var(--color-white);
+  padding: 8px 16px 6px;
+  font-family: var(--h5-20);
+  font-weight: 600;
+  font-size: 16px;
+}
+.getStartedForFreeWrapper:hover {
+  background-color: var(--color-dodgerblue-100);
+}
+.actionButtons,
+.getStartedForFreeWrapper,
+.header,
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.actionButtons {
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.header,
+.mainMenu {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.mainMenu {
+  width: 1160px;
+  justify-content: space-between;
+  padding: var(--padding-10xs) 0;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.header {
+  align-self: stretch;
+  justify-content: center;
+  padding: var(--padding-mini) var(--padding-xl);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+@media screen and (max-width: 992px) {
+  .solutionsPricingTestimonialsWrapper {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .solutionsPricingTestimonials{
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .burgerbutton{
+    border: none !important;
+    background: transparent !important;
+    font-size: 25px;
+    color: #000;
+  }
+
+
+}
+@media screen and (max-width: 580px) {
+.logInWrapper, .getStartedForFreeWrapper{
+  font-size: 11px;
+}
+.groupWrapper{
+  display: none;
+}
+.burgerbutton{
+  margin-top: -4px;
+}
+}
+@media (max-width:360px) {
+
+  .actionButtons {
+      justify-content: flex-start;
+      gap: 5px !important;
+  }
+  .groupIcon {
+      height: 23.4px;
+      width: 25.7px;
+      position: relative;
+  }
+  .logInWrapper{
+    padding: 5px 8px 4px;
+  }
+  .getStartedForFreeWrapper{
+    padding: 6px 8px 5px;
+
+  }
+  
+  }
